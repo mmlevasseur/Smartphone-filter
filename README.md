@@ -21,7 +21,7 @@ To run this project:
 ```
 Download it locally via the Zip file,
 Extract locally to your desktop or a folder,
-Click the "index.html" file to run the game in your browser of choice!
+Click the "index.html" file to run the site in your browser of choice!
 
 OR
 
