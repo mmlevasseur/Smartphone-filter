@@ -1,0 +1,23 @@
+#landing {
+    margin-top: 10%;
+}
+
+html body {
+    background: url(https://images.unsplash.com/photo-1552830417-db945454a578?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+    overflow: hidden;
+}
+
+.jumbotron {
+    color: white;
+    background: none;
+}
+
+.jumbotron .my-4 {
+    border-color: rgb(23, 162, 184);
+}

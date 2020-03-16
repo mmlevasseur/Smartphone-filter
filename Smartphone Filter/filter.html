@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/filter.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/327aba2c6c.js" crossorigin="anonymous"></script>
+    <title>Smartphone Filter</title>
+</head>
+<body>
+  <h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="500" data-aos-mirror="true" data-aos-once="false"><a href="index.html" title="Landing Page"><i class="fas fa-mobile-alt pulsate-bck"></i></a> Smartphone Filter</h1>
+    <div class="container">
+      <h2>Price</h2>
+      <hr>
+      <div class="row">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="price" value="budget" id="budget">
+            <label class="form-check-label" for="budget">$0 - $299</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="price" value="midrange" id="midrange">
+            <label class="form-check-label" for="midrange">$300 - $499</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="price" value="premium-midrange" id="premium-midrange">
+            <label class="form-check-label" for="premium-midrange">$500 - $799</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="price" value="flagship" id="flagship">
+            <label class="form-check-label" for="flagship">$800 - $999</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="price" value="premium-flagship" id="premium-flagship">
+            <label class="form-check-label" for="premium-flagship">$1000+</label>
+        </div>
+      </div>
+
+      <h2>Brand</h2>
+      <hr>
+      <div class="row">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="brand" value="samsung" id="samsung">
+            <label class="form-check-label" for="samsung">Samsung</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="apple" id="apple">
+          <label class="form-check-label" for="apple">Apple</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="google" id="google">
+          <label class="form-check-label" for="google">Google</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="huawei" id="huawei">
+          <label class="form-check-label" for="huawei">Huawei</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="oneplus" id="oneplus">
+          <label class="form-check-label" for="oneplus">Oneplus</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="xiaomi" id="xiaomi">
+          <label class="form-check-label" for="xiaomi">Xiaomi</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="motorola" id="motorola">
+          <label class="form-check-label" for="motorola">Motorola</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="lg" id="lg">
+          <label class="form-check-label" for="lg">LG</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="asus" id="asus">
+          <label class="form-check-label" for="asus">Asus</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="brand" value="razer" id="razer">
+          <label class="form-check-label" for="razer">Razer</label>
+        </div>
+      </div>
+
+      <h2>Features</h2>
+      <hr>
+      <div class="row">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="features" value="large-screen" id="large-screen">
+            <label class="form-check-label" for="large-screen">Large Screen</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="small-screen" id="small-screen">
+          <label class="form-check-label" for="small-screen">Small Screen</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="decent-cpu" id="decent-cpu">
+          <label class="form-check-label" for="decent-cpu">Decent CPU</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="flagship-cpu" id="flagship-cpu">
+          <label class="form-check-label" for="flagship-cpu">Flagship CPU</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="battery" id="battery">
+          <label class="form-check-label" for="battery">Good Battery Life</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="camera" id="camera">
+          <label class="form-check-label" for="camera">Good Camera</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="wireless" id="wireless">
+          <label class="form-check-label" for="wireless">Wireless Charging</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="ip-rating" id="ip-rating">
+          <label class="form-check-label" for="ip-rating">IP68 Rating</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="stereo" id="stereo">
+          <label class="form-check-label" for="stereo">Dual-stereo speakers</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="jack" id="jack">
+          <label class="form-check-label" for="jack">Headphone Jack</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="smooth" id="smooth">
+          <label class="form-check-label" for="smooth">Smooth Screen</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="fingerprint" id="fingerprint">
+          <label class="form-check-label" for="fingerprint">Fingerprint Scanner</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="face" id="face">
+          <label class="form-check-label" for="face">FaceID</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="android" id="android">
+          <label class="form-check-label" for="android">Android</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="ios" id="ios">
+          <label class="form-check-label" for="ios">iOS</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="dual-sim" id="dual-sim">
+          <label class="form-check-label" for="dual-sim">Dual-Sim Slots</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="micro-sd" id="micro-sd">
+          <label class="form-check-label" for="micro-sd">Micro-SD</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="features" value="stylus" id="stylus">
+          <label class="form-check-label" for="stylus">Stylus</label>
+        </div>
+      </div>
+
+      <h2>Storage</h2>
+      <hr>
+      <div class="row">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="storage" value="small-storage" id="small-storage">
+            <label class="form-check-label" for="small-storage">64 GB</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="storage" value="medium-storage" id="medium-storage">
+          <label class="form-check-label" for="medium-storage">128 GB</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="storage" value="lg-storage" id="lg-storage">
+          <label class="form-check-label" for="lg-storage">256 GB</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="storage" value="xl-storage" id="xl-storage">
+          <label class="form-check-label" for="xl-storage">512 GB</label>
+        </div>
+      </div>
+
+      <h4>Results</h4>
+    </div>
+
+<!-- ---------------------- -->
+<!-- ALL PHONES LISTED BELOW -->
+<!-- ---------------------- -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="card phone flagship flagship-cpu samsung large-screen battery camera wireless ip-rating stereo smooth fingerprint face android dual-sim micro-sd medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s20-2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S20</h5>
+            <a href="https://www.samsung.com/global/galaxy/galaxy-s20/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-flagship flagship-cpu samsung large-screen battery camera wireless ip-rating stereo smooth fingerprint face android dual-sim micro-sd medium-storage lg-storage xl-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s20-plus-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S20+</h5>
+            <a href="https://www.samsung.com/global/galaxy/galaxy-s20/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-flagship flagship-cpu samsung large-screen battery camera wireless ip-rating stereo smooth fingerprint face android dual-sim micro-sd medium-storage lg-storage xl-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s20-ultra-10.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S20 Ultra</h5>
+            <a href="https://www.samsung.com/global/galaxy/galaxy-s20/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship flagship-cpu samsung large-screen battery camera wireless ip-rating stereo fingerprint face android dual-sim micro-sd lg-storage xl-storage stylus">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note10-plus-aura-glow.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy Note 10+</h5>
+            <a href="https://www.samsung.com/global/galaxy/galaxy-note10/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship flagship-cpu samsung large-screen battery camera wireless ip-rating stereo fingerprint face android dual-sim micro-sd lg-storage stylus">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note10-aura-white.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy Note 10</h5>
+            <a href="https://www.samsung.com/global/galaxy/galaxy-note10/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange flagship-cpu samsung large-screen camera wireless ip-rating stereo fingerprint face android dual-sim micro-sd jack medium-storage xl-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s10-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S10</h5>
+            <a href="https://www.samsung.com/global/galaxy/galaxy-s10/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship flagship-cpu samsung large-screen battery camera wireless ip-rating stereo fingerprint face android dual-sim micro-sd jack medium-storage xl-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s10-plus-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S10+</h5>
+            <a href="https://www.samsung.com/global/galaxy/galaxy-s10/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange flagship-cpu samsung small-screen camera wireless ip-rating stereo fingerprint face android dual-sim micro-sd jack medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s10e-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S10e</h5>
+            <a href="https://www.samsung.com/global/galaxy/galaxy-s10/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone budget decent-cpu samsung large-screen battery camera fingerprint face android dual-sim micro-sd jack small-storage medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a50-sm-a505f-ds-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy A50</h5>
+            <a href="https://www.samsung.com/us/mobile/galaxy-a50/?cid=sem-mktg-pfs-mob-us-google-na-11112019-140168-&ds_e=GOOGLE-cr:0-pl:249100733-&ds_c=FF~Device+-+Brand+Variations_CN~a+series_PH~on_MK~us_YQ~19q3q4_BS~im_PR~smart_SB~a50_PK~cpql_FS~lo_CA~kew_MD~h_KS~ba_MT~bmm-&ds_ag=AG~Samsung+A50_MK~usnat_AT~ta_MD~h_AG~Samsung+A50_AI~no-&ds_k=%2Bsamsung+%2Ba50+%2Bphone&gclid=Cj0KCQjwu6fzBRC6ARIsAJUwa2TMQMsSEkv_fpkqIxWiXIT5TvcpowTj8-mN0nVAEneV6-Guxogr7o4aAm5qEALw_wcB&gclsrc=aw.ds" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange apple large-screen flagship-cpu battery camera wireless ip-rating stereo face ios dual-sim small-storage medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-11-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Apple iPhone 11</h5>
+            <a href="https://www.apple.com/iphone-11/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship apple large-screen flagship-cpu battery camera wireless ip-rating stereo face ios dual-sim small-storage lg-storage xl-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-pro-10.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Apple iPhone 11 Pro</h5>
+            <a href="https://www.apple.com/iphone-11-pro/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-flagship apple large-screen flagship-cpu battery camera wireless ip-rating stereo face ios dual-sim small-storage lg-storage xl-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-11-pro-max-4.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Apple iPhone 11 Pro Max</h5>
+            <a href="https://www.apple.com/iphone-11-pro/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange apple large-screen flagship-cpu battery camera wireless ip-rating stereo face ios dual-sim small-storage medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-xr-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Apple iPhone XR</h5>
+            <a href="https://www.apple.com/iphone-xr/specs/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange apple small-screen decent-cpu wireless ip-rating stereo fingerprint ios small-storage lg-storage">
+          <img src="https://assets.swappie.com/SwappoeiPhone864gbred-1-1-600x600.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Apple iPhone 8</h5>
+            <a href="https://www.apple.com/iphone-8/specs/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange large-screen google flagship-cpu camera wireless ip-rating stereo smooth face android dual-sim small-storage medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-4-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Google Pixel 4</h5>
+            <a href="https://store.google.com/us/product/pixel_4" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship google large-screen flagship-cpu battery camera wireless ip-rating stereo smooth face android dual-sim small-storage medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-4-xl-2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Google Pixel 4 XL</h5>
+            <a href="https://store.google.com/us/product/pixel_4" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange google small-screen flagship-cpu camera wireless ip-rating stereo fingerprint android dual-sim small-storage medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-3-4.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Google Pixel 3</h5>
+            <a href="https://store.google.com/us/product/pixel_3" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange google large-screen flagship-cpu camera wireless ip-rating stereo fingerprint android dual-sim small-storage medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-3xl-4.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Google Pixel 3 XL</h5>
+            <a href="https://store.google.com/us/product/pixel_3" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange google small-screen decent-cpu camera stereo jack fingerprint android small-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-3a-3.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Google Pixel 3a</h5>
+            <a href="https://store.google.com/us/product/pixel_3a" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange google large-screen decent-cpu battery camera stereo jack fingerprint android small-storage">
+          <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6347/6347790cv12d.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Google Pixel 3a XL</h5>
+            <a href="https://store.google.com/us/product/pixel_3a" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange huawei large-screen flagship-cpu battery camera ip-rating jack fingerprint android dual-sim micro-sd small-storage medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p30-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Huawei P30</h5>
+            <a href="https://consumer.huawei.com/en/phones/p30/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange huawei large-screen flagship-cpu battery camera ip-rating fingerprint wireless android dual-sim micro-sd medium-storage lg-storage xl-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p30-pro-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Huawei P30 Pro</h5>
+            <a href="https://consumer.huawei.com/en/phones/p30-pro/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone budget huawei large-screen decent-cpu camera jack fingerprint android dual-sim micro-sd medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p30-lite-2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Huawei P30 Lite</h5>
+            <a href="https://consumer.huawei.com/ca/phones/p30-lite/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship huawei large-screen flagship-cpu battery camera ip-rating fingerprint face wireless android dual-sim micro-sd medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/huawei/huawei-mate30-pro-2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Huawei Mate 30 Pro</h5>
+            <a href="https://consumer.huawei.com/en/phones/mate30-pro/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange oneplus large-screen flagship-cpu battery camera stereo smooth fingerprint face android dual-sim medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-7t-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">OnePlus 7T</h5>
+            <a href="https://www.oneplus.com/7t?from=head" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship oneplus large-screen flagship-cpu battery camera stereo smooth fingerprint face android dual-sim lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-7t-pro-mclaren-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">OnePlus 7T Pro McLaren</h5>
+            <a href="https://www.oneplus.com/7t-pro-mclaren?from=7t" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange oneplus large-screen flagship-cpu battery camera stereo smooth fingerprint face android dual-sim medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-7-pro-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">OnePlus 7 Pro</h5>
+            <a href="https://www.oneplus.com/7pro?from=head#/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange oneplus large-screen flagship-cpu battery camera fingerprint face android dual-sim medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-6t-thunder-purple-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">OnePlus 6T</h5>
+            <a href="https://www.oneplus.com/6t?from=head" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange xiaomi large-screen flagship-cpu camera fingerprint wireless android dual-sim small-storage medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-9-2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Xiaomi Mi 9</h5>
+            <a href="https://www.mi.com/global/mi9" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange xiaomi large-screen flagship-cpu battery camera fingerprint jack android dual-sim small-storage medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-9t-0.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Xiaomi Mi 9T Pro</h5>
+            <a href="https://www.mi.com/global/mi-9-t-pro" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone midrange xiaomi large-screen decent-cpu battery camera fingerprint jack android dual-sim medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-cc9-pro-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Xiaomi Mi Note 10</h5>
+            <a href="https://www.mi.com/global/mi-note-10" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone budget motorola large-screen decent-cpu battery jack fingerprint android dual-sim micro-sd medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-one-hyper-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Motorola One Hyper</h5>
+            <a href="https://www.motorola.com/us/smartphones-motorola-one-hyper/p?skuId=263" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone budget motorola large-screen decent-cpu battery jack fingerprint android dual-sim micro-sd small-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g7-0.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Motorola Moto G7</h5>
+            <a href="https://www.motorola.com/us/smartphones-moto-g7/p" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange lg large-screen flagship-cpu battery camera wireless ip-rating stereo jack fingerprint android dual-sim micro-sd medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/lg/lg-g8x-thinq-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">LG G8X ThinQ</h5>
+            <a href="https://www.lg.com/us/mobile-phones/g8x-thinq-dual-screen" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship lg large-screen flagship-cpu battery camera wireless ip-rating stereo jack fingerprint android dual-sim micro-sd medium-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/lg/lg-gv50-thinq-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">LG V50 ThinQ</h5>
+            <a href="https://www.lg.com/us/mobile-phones/v50-thinq-5g/verizon" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone flagship asus large-screen flagship-cpu battery camera stereo jack smooth fingerprint face android dual-sim medium-storage lg-storage xl-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/asus/asus-rog-phone2-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Asus ROG Phone II</h5>
+            <a href="https://www.asus.com/us/Phone/ROG-Phone-II/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange asus large-screen flagship-cpu battery camera stereo jack fingerprint face android dual-sim micro-sd small-storage medium-storage lg-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/asus/asus-zenfone-6-zs630kl-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Asus Zenfone 6</h5>
+            <a href="https://www.asus.com/us/Phone/ZenFone-6-ZS630KL/" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+        <div class="card phone premium-midrange razer large-screen flagship-cpu battery stereo fingerprint wireless face smooth ip-rating android micro-sd small-storage">
+          <img src="https://fdn2.gsmarena.com/vv/pics/razer/razer-phone2-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Razer Phone 2</h5>
+            <a href="https://www2.razer.com/eu-en/mobile/razer-phone-2" target="_blank" class="btn btn-info">Product Page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <a href="#"><i class="fas fa-chevron-circle-up positioned-right" title="Back to Top"></i></a>
+
+  <div id="mobile-top">
+    <a href="#">Back to Top</a>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
